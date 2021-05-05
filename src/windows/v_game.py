@@ -1,13 +1,12 @@
 import PySimpleGUI as sg
-import time
-
-def time_as_int():
-    return int(round(time.time()*100))
 
 def build(player, board_data):
 
     layout = [
-        [sg.Text("Jugador: " + player["name"], key="-P1-", text_color="darkblue")]
+        [sg.Text("Jugador: " + player["name"], key="-P1-", text_color="darkblue"),
+        sg.Text("Tiempo total: ", text_color="darkblue"),
+        sg.Text('tiempo', key='-TIMER-', text_color="darkblue"),
+        sg.Text('Elementos encontrados: 10/64', key="-ENCONTRADOS-", text_color="darkblue")]
     ]
 
     for y in range(8):

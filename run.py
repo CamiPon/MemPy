@@ -1,4 +1,4 @@
-from src.component import game
+from src.component import c_game
 
 if __name__ == "__main__":
-    game.start()
+    c_game.start()

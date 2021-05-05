@@ -1,0 +1,10 @@
+[
+    {
+        "Carla": {
+            "password": "123",
+            "genero": "Mujer",
+            "edad": 18,
+            "puntos": 0
+        }
+    }
+]
